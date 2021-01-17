@@ -1,0 +1,161 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+main {
+    height:100vh;
+    display:flex;
+}
+
+.videoGrid {
+    flex: 0.8;
+    background: linear-gradient(#121212, #333);
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.videoGrid .videos {
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    height:92.5%;
+
+}
+
+.videoGrid .client_controls {
+    
+    height:8.5%;
+    width: 80%;
+
+    background: #1c1c1c;
+    box-shadow: 2px 2px 10px 5px rgb(37,37,37);
+    border-radius: .75em;
+
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh; 
+}
+
+.client_controls .controls__group {
+    display:flex;
+}
+
+.client_controls .client_controls__action {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    min-width: 80px;
+    padding: 0.5em 0.8em;
+    margin: 0 .2vw;
+    text-align:center;
+
+    cursor: pointer;
+    border-radius: .75em;
+}
+
+.videoGrid .client_controls__action:hover {
+    background: #2c2c2c;
+    box-shadow: 0 0 50px 10px rgb(37,37,37);
+}
+
+.client_controls__action .action_identifier {
+    margin: .5vh 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight:600;
+    letter-spacing: 0.01vw;
+    color:rgb(200,200,200);
+
+}
+
+.action__button i {
+    color: rgb(64,64,64);
+}
+
+.leave-action .action__button i,
+.leave-action .action_identifier {
+    color:rgb(255,50,20);
+}
+
+.chat {
+    flex: 0.2;
+    display:flex;
+    flex-direction:column;
+    border-left: 2px solid rgba(150,150,150,0.25);
+    background: #242324;
+}
+
+.chat .chat__header {
+    border-bottom: 2px solid rgba(150,150,150,0.25);
+    padding: .5em;
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align:center;
+}
+
+.chat .chat__window {
+    flex-grow:1;
+
+    background: #242324;
+}
+
+.messages {
+    display:flex;
+    flex-direction: column;
+}
+
+.chat .chat__window ul li {
+    list-style: none;
+    background: aliceblue;
+    max-width: 25ch;
+    min-width: 1ch;
+    padding: .2em 1em;
+    font-family: Poppins,sans-serif;
+    margin: 1.5ch;
+}
+
+.chat .chat__window ul li h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.chat .chat__window ul li p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 1ch;
+    border-left: 1px solid black;
+    padding-left: 5px;
+    overflow-wrap: break-word;
+}
+
+.client-message {
+}
+
+.chat .chat__send .message_box {
+    
+    background: #242324;
+    padding: 1em;
+    width:100%;
+    height:15%;
+    bottom:0;
+
+    border:0;
+    color:white;    
+}
+
+.chat .chat__send .message_box:focus {
+    outline:0;
+}

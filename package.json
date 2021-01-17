@@ -1,0 +1,32 @@
+{
+  "name": "downlands-work",
+  "version": "0.0.1",
+  "description": "A Platform built using WebRTC, Sockets and Peer connections with the primary focus being School Institutions needing a specialised form of something like Microsoft Teams",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webrtc",
+    "call",
+    "peer",
+    "to",
+    "peer",
+    "sockets",
+    "nodeproject",
+    "coronavirus",
+    "project"
+  ],
+  "author": "Toby Bridle",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "now": "^21.0.1",
+    "peer": "^0.6.1",
+    "socket.io": "^3.1.0",
+    "uuid": "^8.3.2",
+    "vercel": "^21.1.0"
+  }
+}
